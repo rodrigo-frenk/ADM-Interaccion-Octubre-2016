@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Introducción a Maquetado con Bootstrap</title>
+
+   <link rel="stylesheet" href="recursos/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="recursos/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+
+   <style>
+      * { outline: 1px solid #def; }
+
+
+      img { max-width: 100%;  }
+
+   </style>
+
+</head>
+<body>
+
+
+   <!-- header#cabecera-principal.container-fluid -->
+   <header id="cabecera-principal" class="container-fluid">
+
+      <!-- div#logotipo.col-xs-6 -->
+      <div id="logotipo" class="col-xs-6 col-md-4 col-lg-2">
+
+         <!-- img[src=http://fakeimg.pl/200x100/eee/aaa?text=logotipo] -->
+         <img src="http://fakeimg.pl/200x100/eee/aaa?text=logotipo" alt="">
+
+      </div>
+
+      <!-- #boton-menu.col-xs-6.col-md-4.col-lg-2.text-right -->
+      <div id="boton-menu" class="col-xs-6 hidden-md hidden-lg text-right">
+         Menú
+      </div>
+
+
+      <!-- nav#menu-grande.col-md-8.col-lg-10 -->
+      <nav id="menu-grande" class="col-xs-12 col-md-8 col-lg-10 hidden-xs hidden-sm">
+         <!-- ul>(li.col-md-3>a{Menú $})*4 -->
+         <ul>
+            <li class="col-md-3 text-center"><a href="">Menú 1</a></li>
+            <li class="col-md-3 text-center"><a href="">Menú 2</a></li>
+            <li class="col-md-3 text-center"><a href="">Menú 3</a></li>
+            <li class="col-md-3 text-center"><a href="">Menú 4</a></li>
+         </ul>
+      </nav>
+
+
+
+   </header>
+
+
+
+   <main id="contenedor-principal" class="container-fluid">
+
+
+      <div id="imagen">
+         <img src="http://fakeimg.pl/1200x500/eee/aaa?text=portada" alt="">
+      </div>
+
+
+      <div id="puntos" class="container">
+         <!-- (#punto-$.punto.col-md-4>h2{Titular $}+p>lorem13)*3 -->
+         <div id="punto-1" class="punto col-md-4">
+            <h2>Titular 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aperiam eveniet, sed atque.</p>
+         </div>
+         <div id="punto-2" class="punto col-md-4">
+            <h2>Titular 2</h2>
+            <p>Suscipit illum optio quod nobis dolores? Molestiae reiciendis alias, cumque porro modi asperiores.</p>
+         </div>
+         <div id="punto-3" class="punto col-md-4">
+            <h2>Titular 3</h2>
+            <p>Magnam eveniet, rem ut provident! Deleniti similique nesciunt perspiciatis esse suscipit, recusandae aut.</p>
+         </div>
+      </div>
+
+   </main>
+
+
+   <!-- footer.container-fluid.text-center{Pie de Página} -->
+   <footer class="container-fluid text-center">Pie de Página</footer>
+
+
+   <!-- Una versión de jquery desde CDN para agilizar experiencia de usuario: -->
+   <!--
+<script
+   src="https://code.jquery.com/jquery-3.1.1.min.js"
+   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+   crossorigin="anonymous"></script>
+-->
+
+   <!-- Una versión de jquery instalada local para trabajar offline -->
+   <script src="recursos/jquery-3.1.1.min.js" type="text/javascript"></script>
+
+   <script src="recursos/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+   <script src="js/intro.js" type="text/javascript"></script>
+
+</body>
+</html>
