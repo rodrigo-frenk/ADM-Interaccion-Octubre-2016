@@ -9,23 +9,22 @@
    <link rel="stylesheet" href="recursos/bootstrap-3.3.7-dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="recursos/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
 
-   <style>
-      * { outline: 1px solid #def; }
+   <link rel="stylesheet" href="recursos/slick-1.6.0/slick/slick.css">
+   <link rel="stylesheet" href="recursos/slick-1.6.0/slick/slick-theme.css">
 
+   <link rel="stylesheet" href="css/alturas.css">
+   <link rel="stylesheet" href="css/maqueta.css">
 
-      img { max-width: 100%;  }
-
-   </style>
 
 </head>
 <body>
 
 
    <!-- header#cabecera-principal.container-fluid -->
-   <header id="cabecera-principal" class="container-fluid">
+   <header id="cabecera-principal" class="container-fluid h-10 h-md-20">
 
       <!-- div#logotipo.col-xs-6 -->
-      <div id="logotipo" class="col-xs-6 col-md-4 col-lg-2">
+      <div id="logotipo" class="col-xs-6 col-md-4 col-lg-2 h-100 imgLiquid imgLiquidNoFillLeft">
 
          <!-- img[src=http://fakeimg.pl/200x100/eee/aaa?text=logotipo] -->
          <img src="http://fakeimg.pl/200x100/eee/aaa?text=logotipo" alt="">
@@ -38,7 +37,7 @@
       </div>
 
 
-      <!-- nav#menu-grande.col-md-8.col-lg-10 -->
+      <!-- nav#menu-grande.col-xs-12.col-md-8.col-lg-10 -->
       <nav id="menu-grande" class="col-xs-12 col-md-8 col-lg-10 hidden-xs hidden-sm">
          <!-- ul>(li.col-md-3>a{Menú $})*4 -->
          <ul>
@@ -55,15 +54,25 @@
 
 
 
-   <main id="contenedor-principal" class="container-fluid">
+   <main id="contenedor-principal" class="container-fluid h-80 h-md-70 scroll-h">
 
 
-      <div id="imagen">
-         <img src="http://fakeimg.pl/1200x500/eee/aaa?text=portada" alt="">
-      </div>
+      <section id="imagen-portada" class="">
+
+         <article class="imgLiquid imgLiquidFill">
+            <img src="http://fakeimg.pl/1200x500/eee/aaa?text=portada" alt="">
+         </article>
+         <article class="imgLiquid imgLiquidFill">
+            <img src="http://fakeimg.pl/1200x500/eee/aaa?text=portada" alt="">
+         </article>
+         <article class="imgLiquid imgLiquidFill">
+            <img src="http://fakeimg.pl/1200x500/eee/aaa?text=portada" alt="">
+         </article>
+
+      </section>
 
 
-      <div id="puntos" class="container">
+      <section id="puntos" class="container">
          <!-- (#punto-$.punto.col-md-4>h2{Titular $}+p>lorem13)*3 -->
          <div id="punto-1" class="punto col-md-4">
             <h2>Titular 1</h2>
@@ -77,29 +86,82 @@
             <h2>Titular 3</h2>
             <p>Magnam eveniet, rem ut provident! Deleniti similique nesciunt perspiciatis esse suscipit, recusandae aut.</p>
          </div>
-      </div>
+      </section>
+
+
+
+
+      <!--section#entradas.container-fluid-->
+      <section id="entradas" class="container-fluid">
+
+         <!--article.entrada.col-sm-6.col-md-3.col-lg-2-->
+         <article class="entrada col-sm-6 col-md-4 col-lg-3">
+
+            <!--.imagen.h-40>img[http://fakeimg.pl/300x200]-->
+            <div class="imagen h-40 h-md-30 imgLiquid imgLiquidFill">
+               <img src="http://fakeimg.pl/300x200" alt="">
+            </div>
+
+            <!--.titulo.h-30>h5>lorem8-->
+            <div class="titulo h-30 h-md-20">
+               <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+            </div>
+
+            <div class="fecha h-10 h-md-10 font-s">
+               17.11.16
+            </div>
+
+
+            <!--.extracto.h-30.hidden-xs.hidden-md>lorem14-->
+            <div class="extracto h-30 h-md-20 hidden-xs hidden-sm font-s">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa vitae aut veniam nostrum eius.
+            </div>
+
+
+            <!--.contenedor-boton.h-20.text-right-->
+            <div class="contenedor-boton h-20 h-md-20 text-right">
+               <!--button.btn-primary{Ver más}-->
+               <button class="btn-primary">Ver más</button>
+            </div>
+
+
+
+
+         </article>
+
+
+
+
+      </section>
+
+
 
    </main>
 
 
    <!-- footer.container-fluid.text-center{Pie de Página} -->
-   <footer class="container-fluid text-center">Pie de Página</footer>
+   <footer class="container-fluid text-center h-10">Pie de Página</footer>
 
 
    <!-- Una versión de jquery desde CDN para agilizar experiencia de usuario: -->
    <!--
-<script
+   <script
    src="https://code.jquery.com/jquery-3.1.1.min.js"
    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
    crossorigin="anonymous"></script>
 -->
 
-   <!-- Una versión de jquery instalada local para trabajar offline -->
-   <script src="recursos/jquery-3.1.1.min.js" type="text/javascript"></script>
+<!-- Una versión de jquery instalada local para trabajar offline -->
+<script src="recursos/jquery-3.1.1.min.js" type="text/javascript"></script>
 
-   <script src="recursos/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="recursos/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
 
-   <script src="js/intro.js" type="text/javascript"></script>
+<script src="recursos/imgLiquid-master/js/imgLiquid-min.js" type="text/javascript"></script>
+
+<script src="recursos/slick-1.6.0/slick/slick.min.js" type="text/javascript"></script>
+
+
+<script src="js/intro.js" type="text/javascript"></script>
 
 </body>
 </html>
