@@ -83,3 +83,51 @@ var unaSuma = suma( 10, 7 );
 
 // y usarlo después cuando queramos:
 console.log( "el valor de unaSuma es:", unaSuma );
+
+
+// Calculadora
+
+
+
+function sumar( a, b ) {
+   return a + b;
+}
+
+function restar( a, b ) {
+   return a - b;
+}
+
+function multiplicar( a, b ) {
+   return a * b;
+}
+
+function dividir( a, b ) {
+   return a / b;
+}
+
+function realizarOperacion( operacionActual, a, b ) {
+
+   var resultado;
+
+   switch( operacionActual ) {
+
+      case "sumar": resultado = sumar( a, b ); break;
+
+      case "restar": resultado = restar( a, b ); break;
+
+      case "multiplicar": resultado = multiplicar( a, b ); break;
+
+      case "dividir": resultado = dividir( a, b ); break;
+   }
+
+   console.log( "El resultado de la operación " + operacionActual + " es: ", resultado );
+
+}
+
+realizarOperacion( "sumar", 3, 8 );
+
+realizarOperacion( "restar", 3, 8 );
+
+realizarOperacion( "multiplicar", 3, 8 );
+
+realizarOperacion( "dividir", 3, 8 );

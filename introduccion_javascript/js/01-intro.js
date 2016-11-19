@@ -178,7 +178,7 @@ if( ( pagoBoleto && tienePulsera ) || esMiembroBanda ) {
 
 
 
-
+// day es un número entre el 0 y el 6
 var day = new Date().getDay();
 var weekday;
 
